@@ -3,6 +3,9 @@
 const playWithPet = document.getElementById ("playWithPet");
 const boredText = document.getElementById ("boredText");
 const restart = document.getElementById ("restart");
+const image = document.getElementById("img");
+
+image.style.display = "none"
 
 restart.style.display = "none";
 let boredomLevel = 5;
