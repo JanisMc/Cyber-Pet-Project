@@ -4,18 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="./main.css">
     <title>Cyber Pet</title>
 </head>
 <body>
-    <h1>Welcome to your virtual pet sanctuary</h1>
-
-    <p id = "feedText"></p>
-    <button id = "feedPet">Feed your pet</button>
-    <p id = "drinkText"></p>
-    <button id = "drinkPet">Give your pet a drink</button>
-    <p id = "boredText"></p>
-    <button id = "playWithPet">Play with your Pet</button> 
-    <button id = "restart">Restart</button>
+    <div>
+        <h1>Welcome to your virtual pet sanctuary</h1>
+    </div>
+    <div id = "petSelection">
+        <form id = "form">
+            <p>Please choose your pet:</p>
+            <div>
+              <input type="radio" id="bunny"
+               name="Your new pet" value="Bunny">
+              <label for="bunny">Bunny</label>
+          
+              <input type="radio" id="dragon"
+               name="Your new pet" value="Dragon">
+              <label for="dragon">Dragon</label>
+          
+              <input type="radio" id="velociraptor"
+               name="Your new pet" value="Velociraptor">
+              <label for="velociraptor">Velociraptor</label>
+            </div>
+          </form>
+          <pre id="log">
+          </pre>
+          <div id = "image">
+            <img id = "img" src = "./img/blood.jpg" alt = "image">
+        </div>
+          <div>
+              <h4 id = "petName">Please give your pet a name</h4>
+              <input id = "input" type = "text">
+              <button id = "submit">submit</button>
+          </div>
+    </div>
+    <div id = "feeding">
+        <p id = "feedText"></p>
+        <button id = "feedPet">Feed your pet</button>
+    </div>
+    <div id = "drinking">
+        <p id = "drinkText"></p>
+        <button id = "drinkPet">Give your pet a drink</button>
+    </div>
+    <div id = "playing">
+        <p id = boredDisplay></p>
+        <p id = "boredText"></p>
+        <button id = "playWithPet">Play with your Pet</button> 
+    </div>
+    <div id = "newGame">
+        <button id = "restart">Restart</button>
+    </div>
     <script type = "module" src="app.js"></script>
 </body>
 </html>
